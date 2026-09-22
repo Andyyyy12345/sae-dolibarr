@@ -1,19 +1,16 @@
 # Journal de bord
 
-(remplacer les items en majuscule)
-
-* TITRE PROJET
-* NOM CHEF DE PROJET
-* NOMS AUTRE MEMBRES EQUIPE
-* DATE DEBUT
+* SAE 52 - Installation d’un ERP/CRM
+* Evan NODARI, Tom PAQUET, Andy XIONG
+* 22/09/2026
 
 
 ## Séance n° 1
 
-* date - heure
-* Travail effectué
-* A faire à la prochaine séance
-* Difficultés rencontrées
+* 22/09/2026 - 13h-16h
+* Travail effectué : Prise de connaissance du sujet + installation des VMs + docker
+* A faire à la prochaine séance : 
+* Difficultés rencontrées : Problème surtout 
 * Remarques sur la séances (membre absent, pbe technique, ...)
 
 
