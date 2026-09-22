@@ -8,10 +8,10 @@
 ## Séance n° 1
 
 * 22/09/2026 - 13h-16h
-* Travail effectué : Prise de connaissance du sujet + installation des VMs + docker
-* A faire à la prochaine séance : 
-* Difficultés rencontrées : Problème surtout 
-* Remarques sur la séances (membre absent, pbe technique, ...)
+* Travail effectué : Prise de connaissance du sujet + installation des VMs + docker + importation des CSV
+* A faire à la prochaine séance : continuer la SAE
+* Difficultés rencontrées : Problème surtout concernant Andy avec l'installation de Docker
+* Remarques sur la séances (membre absent, pbe technique, ...) : aucune
 
 
 ## Séance n° 2
