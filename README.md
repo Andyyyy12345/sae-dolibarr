@@ -49,3 +49,24 @@ Le script va démarrer Docker, patienter pendant l'initialisation de Dolibarr (e
 - Naviguez dans **Configuration > Modules/Applications**.
 - Activez le module **Tiers** (Gestion de la relation client).
 - L'onglet **Tiers** apparaît dans le menu supérieur. En cliquant dessus, vous constaterez que la liste des entreprises a bien été importée par nos scripts.
+
+
+
+## 💾 Sauvegarde et restauration
+
+**Faire une sauvegarde** (conteneurs démarrés, depuis le dossier du projet) :
+`./backup.sh`
+Cela crée un dossier `backups/AAAAMMJJ_HHMMSS/` avec :
+- `dolibarr_db.sql` : export complet de la base de données ;
+
+
+**Restaurer après un incident :**
+1. `./restore.sh backups/AAAAMMJJ_HHMMSS` : on remet les données de la sauvegarde.
+2. Se reconnecter sur `http://localhost` et vérifier que les Tiers sont revenus (Tiers > Liste).
+
+
+**Restaurer après un incident (repartir de zéro (si on doit installer Dolibarr de nouveau par exemple)) :**
+1. `docker compose down -v` : on supprime tout (conteneurs et volumes), pour simuler la perte du serveur.
+2. `./install.sh` : on réinstalle l'environnement.
+3. `./restore.sh backups/AAAAMMJJ_HHMMSS` : on remet les données de la sauvegarde.
+4. Se reconnecter sur `http://localhost` et vérifier que les Tiers sont revenus (Tiers > Liste).

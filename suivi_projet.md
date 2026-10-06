@@ -35,3 +35,12 @@
 * A faire à la prochaine séance : N/A (Fin du projet)
 * Difficultés rencontrées : À compléter si besoin.
 * Remarques sur la séances (membre absent, pbe technique, ...) : À compléter si besoin.
+
+
+## Séance n° 4
+
+* 06/10/2026 - 8h30/11h30 - 14h30/17h30
+* Travail effectué : Modification des scripts restore.sh et backup.sh (ajout de commentaire)
+* A faire à la prochaine séance : N/A (Fin du projet)
+* Difficultés rencontrées : 
+* Remarques sur la séances :
