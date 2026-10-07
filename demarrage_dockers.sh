@@ -2,6 +2,8 @@
 
 echo "[1/1] Démarrage des conteneurs..."
 
+sudo systemctl start docker
+
 # Le "if" exécute la commande et bascule sur le "then" si elle renvoie un code 0 (0 signifie succès)
 if docker compose up -d; then
     echo "Conteneurs démarrés"
