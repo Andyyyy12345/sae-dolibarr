@@ -3,7 +3,7 @@
 CONTAINER_DB="sae-dolibarr-mariadb-1"
 DB_NAME="dolibarr_db"
 
-# On pointe vers le fichier dans le dossier data/ (ou change si ton fichier est ailleurs)
+# On pointe vers le fichier dans le dossier data
 CSV_SOURCE="data/import_tiers.csv"
 CSV_TARGET="/tmp/import_tiers.csv"
 

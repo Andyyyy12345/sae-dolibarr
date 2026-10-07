@@ -1,10 +1,10 @@
 #!/bin/bash
-# sauvegarde de dolibarr (la base + les documents)
+# sauvegarde de dolibarr (la base)
 
 
 
 # Création d'un dossier avec la date pour pas écraser les anciennes sauvegardes
-DATE=$(date +%Y%m%d_%H%M%S)
+DATE=$(date +%Y%m%d_%H%M%S) # Le nom du dossier est l'année/mois/jour_Heure/minutes/secondes
 mkdir -p backups/$DATE
 
 

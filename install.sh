@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "=========================================="
-echo "  Lancement du déploiement SAE Dolibarr   "
+echo "  Lancement du déploiement de Dolibarr   "
 echo "=========================================="
 
 echo "[1/3] Démarrage des conteneurs..."
