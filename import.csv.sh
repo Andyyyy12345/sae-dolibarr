@@ -7,7 +7,7 @@ DB_NAME="dolibarr_db"
 CSV_SOURCE="data/import_tiers.csv"
 CSV_TARGET="/tmp/import_tiers.csv"
 
-echo "=== Démarrage de l'importation automatisée ==="
+echo "=== Démarrage de l'importation ==="
 
 # 1. Transfert du fichier CSV dans le conteneur
 echo "[1/2] Transfert du fichier CSV vers le conteneur MariaDB..."
