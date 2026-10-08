@@ -13,7 +13,8 @@ echo "=== Démarrage de l'importation automatisée ==="
 echo "[1/2] Transfert du fichier CSV vers le conteneur MariaDB..."
 docker cp $CSV_SOURCE $CONTAINER_DB:$CSV_TARGET
 
-# 2. Injection via le compte root de MariaDB dans le conteneur pour s'affranchir des restrictions de droits
+# 2. Injection via le compte root de MariaDB dans le conteneur pour s'affranchir des restrictions de droits 
+# -e indique à MariaDB d'exécuter la commande SQL qui suit, puis de se fermer immédiatement.
 echo "[2/2] Injection des données dans la table llx_societe..."
 docker exec -it $CONTAINER_DB mariadb -u root -proot $DB_NAME -e "
 LOAD DATA INFILE '$CSV_TARGET'

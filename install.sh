@@ -7,7 +7,7 @@ echo "=========================================="
 echo "[1/3] Démarrage des conteneurs..."
 docker compose up -d
 
-echo "[2/3] Initialisation automatique de Dolibarr..."
+echo "[2/3] Initialisation de Dolibarr..."
 # Tant que la requête HTTP sur localhost ne renvoie pas un code 200, 301 ou 302, on boucle (s = silent, o = jette le contenu HTML de la page reçue, w = affiche uniquement le code HTTP, q = quiet, E = extended-regexp)
 until curl -s -o /dev/null -w "%{http_code}" http://localhost | grep -qE "200|301|302"; do
     # Pause de 3s entre chaque test pour ne pas surcharger le CPU
