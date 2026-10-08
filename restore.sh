@@ -11,7 +11,7 @@ set -euo pipefail
 cd "$(dirname "$0")" #Déplace le terminal dans le dossier où se trouve le script.
 
 
-SRC="${1:-}" #SRC = le premier argument
+SRC="backups/${1:-}" #SRC = le premier argument
 if [ -z "$SRC" ] || [ ! -f "$SRC/dolibarr_db.sql" ]; then  # Si SRC est nul ou si il n'y a pas le fichier .sql dans le dossier passé en parametre
     echo "Erreur : Pas de fichier .sql dans le dossier donné"
     exit 1
