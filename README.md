@@ -12,6 +12,8 @@ L'architecture repose sur deux conteneurs :
 - **MariaDB** (Base de données)
 - **Dolibarr** (Serveur Web Apache + PHP + Application)
 
+Concernant l'image, nous allons prendre tuxgasy car cette image est facile à déployer.
+
 ## 🏗️ Architecture des fichiers
 
 - `docker-compose.yml` : Définit l'infrastructure, les volumes, les réseaux et les variables d'environnement natives (nom de la base, identifiants, nom de l'entreprise).
