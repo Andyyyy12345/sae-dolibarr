@@ -19,6 +19,15 @@ fi
 
 
 echo "Restauration de la base..."
+echo "[1/3] Restauration des dossiers html et documents..."
+
+
+#Extrait l'archive qui va remplacer les dossiers actuels
+# -x (eXtract) : Indique à tar d'extraire les fichiers contenus dans l'archive. 
+# -z (gzip) : Indique à tar que l'archive a été compressée avec gzip et qu'il doit d'abord la décompresser avant de pouvoir lire les fichiers.
+# -f (File) : Indique que le mot qui suit immédiatement est le nom du fichier archive à ouvrir
+tar -xzf "$SRC/dolibarr_files.tar.gz"
+
 
 docker compose exec -T mariadb mariadb -u root -proot -e "DROP DATABASE IF EXISTS dolibarr_db; CREATE DATABASE dolibarr_db;" # DROP DATABASE IF EXISTS Efface la BDD
 docker compose exec -T mariadb mariadb -u root -proot dolibarr_db < "$SRC/dolibarr_db.sql" # Cette ligne récupère le fichier .sql et l'injecte dans la BDD
