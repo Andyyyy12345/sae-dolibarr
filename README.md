@@ -48,6 +48,7 @@ Le script va démarrer Docker, patienter pendant l'initialisation de Dolibarr (e
 - Connectez-vous avec les identifiants par défaut (`admin` / `admin`).
 - Naviguez dans **Configuration > Modules/Applications**.
 - Activez le module **Tiers** (Gestion de la relation client).
+- Activez le module **Fournisseur**.
 - L'onglet **Tiers** apparaît dans le menu supérieur. En cliquant dessus, vous constaterez que la liste des entreprises a bien été importée par nos scripts.
 
 
