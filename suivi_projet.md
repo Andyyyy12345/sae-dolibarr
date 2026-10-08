@@ -40,7 +40,7 @@
 ## Séance n° 4
 
 * 06/10/2026 - 8h30/11h30 - 14h30/17h30
-* Travail effectué : Modification des scripts restore.sh et backup.sh (ajout de commentaire)
+* Travail effectué : Modification des scripts restore.sh et backup.sh (ajout de commentaire et résolution de bugs)
 * A faire à la prochaine séance : N/A (Fin du projet)
-* Difficultés rencontrées : 
+* Difficultés rencontrées : Problème avec la restauration (La restauration supprimait la table des users) c'était du à un problème avec le chemin de la backup
 * Remarques sur la séances :
