@@ -3,7 +3,7 @@
 
 
 set -euo pipefail 
-# -e arrête immédiatement le script si une commande échoue.
+# -e arrête le script si une commande échoue.
 # -u provoque une erreur si le script tente d'utiliser une variable non définie. 
 # -o pipefail fait que si une commande échoue au milieu de la pipeline, la pipeline est considéré comme échoué.
 
